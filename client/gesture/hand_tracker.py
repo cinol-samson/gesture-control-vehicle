@@ -4,7 +4,6 @@ Replaces legacy mp.solutions.hands and mp.solutions.drawing_utils.
 """
 
 import os
-import urllib.request
 import logging
 from typing import Optional, List, Any
 
@@ -45,21 +44,33 @@ HAND_CONNECTIONS = [
 ]
 
 MODEL_FILENAME = "hand_landmarker.task"
-MODEL_URL = "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task"
 
 
 def get_model_path() -> str:
-    """Return local path to hand_landmarker.task model, downloading if necessary."""
+    """Return local path to hand_landmarker.task model.
+
+    This function enforces local-only usage: it will return the path to the
+    model file if it exists next to this module. If the file is missing, it
+    raises FileNotFoundError instead of attempting to download it.
+    """
     dir_path = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(dir_path, MODEL_FILENAME)
     if not os.path.exists(model_path):
-        logger.info("Downloading %s to %s ...", MODEL_FILENAME, model_path)
-        urllib.request.urlretrieve(MODEL_URL, model_path)
+        raise FileNotFoundError(
+            f"Local model '{MODEL_FILENAME}' not found at {model_path}.\n"
+            "Place the file there (the repository already includes hand_landmarker.task),"
+            " or obtain the model from MediaPipe and save it at that path."
+        )
     return model_path
 
 
 class HandTracker:
-    """Hand landmark detector using MediaPipe Tasks HandLandmarker API."""
+    """Hand landmark detector using MediaPipe Tasks HandLandmarker API.
+
+    Uses VIDEO running mode for efficient continuous video processing. The
+    process() method now accepts a timestamp_ms parameter (monotonic millisecond
+    timestamp) required by the MediaPipe Tasks Video API.
+    """
 
     def __init__(self, max_num_hands: int = 1, min_detection_confidence: float = 0.5, min_tracking_confidence: float = 0.5):
         self.enabled = HAS_MEDIAPIPE_TASKS
@@ -71,31 +82,36 @@ class HandTracker:
                 base_options = python.BaseOptions(model_asset_path=model_path)
                 options = vision.HandLandmarkerOptions(
                     base_options=base_options,
-                    running_mode=vision.RunningMode.IMAGE,
+                    running_mode=vision.RunningMode.VIDEO,
                     num_hands=max_num_hands,
                     min_hand_detection_confidence=min_detection_confidence,
                     min_hand_presence_confidence=min_tracking_confidence
                 )
                 self.detector = vision.HandLandmarker.create_from_options(options)
-                logger.info("Initialized HandLandmarker from %s", model_path)
+                logger.info("Initialized HandLandmarker (VIDEO) from %s", model_path)
             except Exception as e:
                 logger.error("Failed to initialize MediaPipe HandLandmarker: %s", e)
                 self.enabled = False
 
-    def process(self, frame: cv2.Mat) -> Optional[List[Any]]:
+    def process(self, frame: cv2.Mat, timestamp_ms: int) -> Optional[List[Any]]:
         """
-        Process a BGR image frame and return normalized hand landmarks.
+        Process a BGR image frame with an associated monotonic timestamp (ms)
+        and return normalized hand landmarks.
 
         :param frame: BGR image frame from OpenCV.
+        :param timestamp_ms: Monotonic timestamp in milliseconds for MediaPipe video API.
         :return: List of landmark objects for the primary hand, or None.
         """
         if not self.enabled or self.detector is None or frame is None:
             return None
 
         try:
+            # Convert BGR -> RGB once per frame (required by MediaPipe Image)
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb_frame)
-            result = self.detector.detect(mp_image)
+
+            # Use video-mode detector which accepts timestamps for internal tracking
+            result = self.detector.detect_for_video(mp_image, timestamp_ms)
 
             if result and result.hand_landmarks and len(result.hand_landmarks) > 0:
                 return result.hand_landmarks[0]

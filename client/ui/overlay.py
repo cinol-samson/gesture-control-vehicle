@@ -22,7 +22,8 @@ class OverlayDrawer:
         gesture: str,
         confidence: float,
         connection_status: str,
-        fps: float = 0.0
+        fps: float = 0.0,
+        timings: Optional[dict] = None
     ) -> cv2.Mat:
         """
         Draw visual overlay on frame.
@@ -92,5 +93,15 @@ class OverlayDrawer:
             frame, fps_text, (w - 110, 25),
             cv2.FONT_HERSHEY_SIMPLEX, 0.55, self.COLOR_WHITE, 1
         )
+
+        # Optional timing diagnostics (capture, preprocess, mediapipe, gesture, network, display)
+        if timings:
+            x = 10
+            y = h - 80
+            line_h = 18
+            for key, ms in timings.items():
+                text = f"{key}: {ms:.1f} ms"
+                cv2.putText(frame, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, self.COLOR_WHITE, 1)
+                y += line_h
 
         return frame
