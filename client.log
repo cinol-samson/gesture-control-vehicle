@@ -52,70 +52,772 @@
 2026-08-13 17:08:12,912 [INFO] network.command_client: Executing fail-safe stop command...
 2026-08-13 17:08:16,048 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x244ec4386b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
 2026-08-13 17:08:16,594 [INFO] VisionClient: Client shutdown complete.
-2026-08-13 23:52:35,645 [INFO] VisionClient: Initializing Vision Client...
-2026-08-13 23:52:35,646 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
-2026-08-13 23:52:35,647 [INFO] VisionClient: Target Latency Budget: 180 ms
-2026-08-13 23:52:35,649 [INFO] VisionClient: Resolution: 640x480
-2026-08-13 23:52:35,800 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\FATHIMA FIDHA\OneDrive\Desktop\New_IEEE_Project\gesture-control-vehicle\client\gesture\hand_landmarker.task
-2026-08-13 23:52:36,546 [INFO] VisionClient: Camera capture loop started. Press 'q' or Esc to exit.
-2026-08-13 23:52:37,196 [ERROR] VisionClient: Unexpected error in main processing loop: cannot access local variable 'status_msg' where it is not associated with a value
-Traceback (most recent call last):
-  File "c:\Users\FATHIMA FIDHA\OneDrive\Desktop\New_IEEE_Project\gesture-control-vehicle\client\main.py", line 240, in main
-    connection_status=status_msg,
-                      ^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'status_msg' where it is not associated with a value
-2026-08-13 23:52:37,202 [INFO] VisionClient: Shutting down client...
-2026-08-13 23:52:37,203 [INFO] network.command_client: Executing fail-safe stop command...
-2026-08-13 23:52:40,312 [WARNING] network.command_client: Failed to send gesture 'up': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1f575216520>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
-2026-08-13 23:52:40,327 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1f575271910>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
-2026-08-13 23:52:40,708 [INFO] VisionClient: Client shutdown complete.
-2026-08-13 23:59:34,840 [INFO] VisionClient: Initializing Vision Client...
-2026-08-13 23:59:34,842 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
-2026-08-13 23:59:34,844 [INFO] VisionClient: Target Latency Budget: 180 ms
-2026-08-13 23:59:34,845 [INFO] VisionClient: Resolution: 640x480
-2026-08-13 23:59:35,217 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\FATHIMA FIDHA\OneDrive\Desktop\New_IEEE_Project\gesture-control-vehicle\client\gesture\hand_landmarker.task
-2026-08-13 23:59:36,058 [INFO] VisionClient: Camera capture loop started. Press 'q' or Esc to exit.
-2026-08-13 23:59:39,945 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe0ac6bb10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
-2026-08-13 23:59:43,074 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe0ad61910>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
-2026-08-13 23:59:46,206 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe0accb240>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-13 23:59:49,329 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe0accaf10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-13 23:59:52,463 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe16df05a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-13 23:59:55,604 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe16df0c00>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-13 23:59:58,742 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe0acc9e10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:00:01,582 [INFO] VisionClient: Keyboard interrupt received.
-2026-08-14 00:00:01,583 [INFO] VisionClient: Shutting down client...
-2026-08-14 00:00:01,583 [INFO] network.command_client: Executing fail-safe stop command...
-2026-08-14 00:00:01,870 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe0accb790>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:00:04,721 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe16df08d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:00:05,002 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1fe16df06b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:00:05,082 [INFO] VisionClient: Client shutdown complete.
-2026-08-14 00:01:12,677 [INFO] VisionClient: Initializing Vision Client...
-2026-08-14 00:01:12,678 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
-2026-08-14 00:01:12,679 [INFO] VisionClient: Target Latency Budget: 180 ms
-2026-08-14 00:01:12,680 [INFO] VisionClient: Resolution: 640x480
-2026-08-14 00:01:12,815 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\FATHIMA FIDHA\OneDrive\Desktop\New_IEEE_Project\gesture-control-vehicle\client\gesture\hand_landmarker.task
-2026-08-14 00:01:13,468 [INFO] VisionClient: Camera capture loop started. Press 'q' or Esc to exit.
-2026-08-14 00:01:17,215 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b3ebb10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
-2026-08-14 00:01:20,347 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b4e15b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
-2026-08-14 00:01:23,468 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44b350>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:26,598 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44af10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:29,724 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757c5a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:32,860 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44a030>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:35,989 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44b680>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:39,125 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44bbd0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:42,261 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757c6b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:45,397 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757caf0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:48,537 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44b240>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:51,665 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44ae00>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:54,801 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757c050>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:01:57,942 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757c5a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:01,082 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44a140>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:04,217 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44b9b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:07,343 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44b8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:10,492 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757c160>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:12,450 [INFO] VisionClient: Keyboard interrupt received.
-2026-08-14 00:02:12,450 [INFO] VisionClient: Shutting down client...
-2026-08-14 00:02:12,451 [INFO] network.command_client: Executing fail-safe stop command...
-2026-08-14 00:02:13,617 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1133757cd10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:15,578 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1132b44b8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
-2026-08-14 00:02:15,943 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 07:30:47,378 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 07:30:47,379 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 07:30:47,379 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 07:30:47,380 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 07:30:48,695 [INFO] gesture.hand_tracker: Initialized HandLandmarker from c:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 07:31:06,289 [INFO] camera: WebcamStream background capture thread started (Index: 0, 640x480).
+2026-08-14 07:31:06,290 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 07:31:07,227 [WARNING] camera: Camera stream disconnected or failed to grab frame.
+2026-08-14 07:31:09,489 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x20977c22e90>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-14 07:31:09,696 [INFO] VisionClient: Shutting down client...
+2026-08-14 07:31:09,697 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 07:31:12,827 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x20977c1da30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-14 07:31:12,876 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 07:31:12,890 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 22:39:49,172 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 22:39:49,173 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 22:39:49,174 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 22:39:49,174 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 22:39:51,360 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 22:40:19,461 [INFO] camera: WebcamStream background capture thread started (Index: 0, 640x480).
+2026-08-14 22:40:19,462 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 22:40:19,556 [WARNING] camera: Camera stream failed 10 consecutive reads. Stopping capture thread.
+2026-08-14 22:40:19,560 [INFO] VisionClient: Shutting down client...
+2026-08-14 22:40:19,560 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 22:40:19,825 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:40:19,840 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 22:40:19,851 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 22:46:02,335 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 22:46:02,337 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 22:46:02,337 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 22:46:02,338 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 22:46:02,698 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 22:46:04,499 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, backend: CAP_DSHOW).
+2026-08-14 22:46:04,500 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 22:46:05,101 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:06,110 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:06,761 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:07,796 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:08,809 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:09,853 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:10,894 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:11,326 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:12,340 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:13,376 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:14,410 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:15,192 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:16,229 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:16,645 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:17,697 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:17,968 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:19,020 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:19,350 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:20,344 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:21,324 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:22,374 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:23,399 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:24,417 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:25,427 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:26,447 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:27,446 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:28,465 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:28,537 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:29,566 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:30,030 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:30,407 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:31,398 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:31,569 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:32,578 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:33,193 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:34,218 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:35,237 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:36,274 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:37,302 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:38,313 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:39,331 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:40,332 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:41,340 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:42,372 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:43,380 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:44,385 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:45,399 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:46,419 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:47,459 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:48,496 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:49,500 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:50,547 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:50,886 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:46:51,009 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:51,839 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:52,156 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:53,193 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:53,663 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:54,684 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:55,509 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:55,979 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:46:56,148 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:56,979 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:46:58,007 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:46:58,333 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:46:59,363 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:47:00,413 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:47:01,451 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:47:01,775 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:02,135 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:47:03,115 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:47:04,155 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:47:05,184 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:47:06,207 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:47:07,228 [INFO] network.command_client: Sent gesture 'right' successfully (applied: 'right')
+2026-08-14 22:47:07,691 [INFO] network.command_client: Sent gesture 'up' successfully (applied: 'up')
+2026-08-14 22:47:08,329 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:09,339 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:10,349 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:11,394 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:12,411 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:13,450 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:14,495 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:15,510 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:16,526 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:17,568 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:18,588 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:19,603 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:20,638 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:21,672 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:22,701 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:23,705 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:24,746 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:25,748 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:26,804 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:27,817 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:28,818 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:29,852 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:30,927 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:31,963 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:32,953 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:33,995 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:35,034 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:36,055 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:37,062 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:38,108 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:39,110 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:40,136 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:41,146 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:42,171 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:43,225 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:44,268 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:45,303 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:46,305 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:47,312 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:48,302 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:49,318 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:50,392 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:51,451 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:52,457 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:53,462 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:54,505 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:55,563 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:56,565 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:57,596 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:58,614 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:47:59,630 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:00,661 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:01,698 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:02,708 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:03,752 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:04,790 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:05,839 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:06,861 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:07,919 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:08,944 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:09,979 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:11,006 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:12,021 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:13,042 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:14,047 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:15,062 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:16,089 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:17,136 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:18,158 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:19,161 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:20,214 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:21,252 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:22,275 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:23,281 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:24,321 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:25,362 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:26,377 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:27,384 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:28,390 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:29,450 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:30,468 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:31,486 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:32,530 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:33,560 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:34,571 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:35,629 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:36,625 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:37,647 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:38,656 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:39,706 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:40,713 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:41,761 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:42,790 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:43,809 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:44,856 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:45,901 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:46,934 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:47,988 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:49,038 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:50,038 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:51,088 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:52,088 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:53,137 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:54,185 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:55,200 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:56,220 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:57,251 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:58,290 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:48:59,324 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:00,366 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:01,392 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:02,439 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:03,482 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:04,550 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:05,545 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:06,588 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:07,587 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:08,612 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:09,609 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:10,611 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:11,652 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:12,642 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:13,697 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:14,729 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:15,733 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:16,808 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:17,849 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:18,857 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:19,861 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:20,863 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:21,875 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:22,931 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:23,951 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:24,969 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:25,994 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:27,002 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:28,043 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:29,052 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:30,088 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:31,110 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:32,150 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:33,185 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:34,202 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:35,254 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:36,270 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:37,280 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:38,310 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:39,344 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:40,342 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:41,361 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:42,369 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:43,390 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:44,399 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:45,407 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:46,426 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:47,462 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:48,530 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:49,547 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:50,601 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:51,639 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:52,663 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:53,686 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:54,685 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:55,721 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:56,783 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:57,821 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:58,871 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:49:59,900 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:00,935 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:01,967 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:03,014 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:04,017 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:05,030 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:06,050 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:07,113 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:08,145 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:09,189 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:10,223 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:11,256 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:12,286 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:13,334 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:14,346 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:15,361 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:16,388 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:17,406 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:18,415 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:19,431 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:20,471 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:21,516 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:22,699 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:23,718 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:24,712 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:25,772 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:26,762 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:27,805 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:28,850 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:29,857 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:30,915 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:31,919 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:32,976 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:33,983 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:34,984 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:36,017 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:37,032 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:38,058 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:39,081 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:40,098 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:41,115 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:42,166 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:43,172 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:44,241 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:45,265 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:46,307 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:47,312 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:48,338 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:49,391 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:50,429 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:51,439 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:52,469 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:53,528 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:54,558 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:55,624 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:56,643 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:57,671 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:58,734 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:50:59,749 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:51:00,779 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:51:01,801 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:51:02,806 [INFO] network.command_client: Sent gesture 'left' successfully (applied: 'left')
+2026-08-14 22:51:03,193 [INFO] VisionClient: User requested exit.
+2026-08-14 22:51:03,194 [INFO] VisionClient: Shutting down client...
+2026-08-14 22:51:03,194 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 22:51:03,211 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:03,290 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 22:51:03,374 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 22:51:30,854 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 22:51:30,855 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 22:51:30,856 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 22:51:30,856 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 22:51:30,995 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 22:51:32,456 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, backend: CAP_DSHOW).
+2026-08-14 22:51:32,457 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 22:51:33,040 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:34,045 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:35,051 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:36,054 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:37,077 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:38,069 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:39,095 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:40,108 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:41,130 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:42,157 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:43,187 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:44,177 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:45,207 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:46,227 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:47,236 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:48,239 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:49,250 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:50,248 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:51,261 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:52,316 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:53,330 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:54,178 [INFO] VisionClient: User requested exit.
+2026-08-14 22:51:54,178 [INFO] VisionClient: Shutting down client...
+2026-08-14 22:51:54,178 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 22:51:54,194 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:51:55,043 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 22:51:55,068 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 22:53:15,686 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 22:53:15,687 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 22:53:15,688 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 22:53:15,688 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 22:53:15,926 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 22:57:17,999 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 22:57:18,000 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 22:57:18,000 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 22:57:18,001 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 22:57:18,189 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 22:59:02,682 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, backend: CAP_DSHOW).
+2026-08-14 22:59:02,683 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 22:59:03,474 [WARNING] camera: Camera stream failed 15 consecutive reads. Stopping capture thread.
+2026-08-14 22:59:03,479 [INFO] VisionClient: Shutting down client...
+2026-08-14 22:59:03,479 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 22:59:03,505 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 22:59:03,505 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 22:59:03,537 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 23:05:08,907 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:05:08,908 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:05:08,909 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:05:08,910 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:05:09,393 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:05:41,621 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:05:41,622 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:05:41,623 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:05:41,623 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:05:41,776 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:05:41,897 [ERROR] VisionClient: Failed to initialize camera stream: Failed to open webcam at index 0
+2026-08-14 23:09:45,240 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:09:45,242 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:09:45,242 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:09:45,243 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:09:45,714 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:09:46,685 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 2.5s).
+2026-08-14 23:09:46,685 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 23:09:49,705 [WARNING] camera: Camera stream failed 15 consecutive reads. Stopping capture thread.
+2026-08-14 23:09:49,706 [INFO] VisionClient: Shutting down client...
+2026-08-14 23:09:49,707 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 23:09:49,852 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 23:09:49,904 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 23:09:49,926 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 23:11:26,069 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:11:26,071 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:11:26,072 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:11:26,072 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:11:26,268 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:11:27,270 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 2.5s).
+2026-08-14 23:11:27,270 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 23:11:30,264 [WARNING] camera: Camera stream failed 15 consecutive reads. Stopping capture thread.
+2026-08-14 23:11:30,268 [INFO] VisionClient: Shutting down client...
+2026-08-14 23:11:30,269 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 23:11:30,293 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 23:11:30,344 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 23:11:30,366 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 23:21:35,119 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:21:35,120 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:21:35,121 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:21:35,122 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:21:35,613 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:21:36,387 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 2.5s).
+2026-08-14 23:21:36,387 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 23:21:39,372 [WARNING] camera: Camera stream failed 15 consecutive reads. Stopping capture thread.
+2026-08-14 23:21:39,377 [INFO] VisionClient: Shutting down client...
+2026-08-14 23:21:39,377 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 23:21:39,410 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 23:21:39,464 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 23:21:39,482 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 23:29:22,512 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:29:22,514 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:29:22,514 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:29:22,515 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:29:23,067 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:29:23,927 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 5.0s).
+2026-08-14 23:29:23,928 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 23:29:29,345 [WARNING] camera: Camera stream failed 15 consecutive reads. Stopping capture thread.
+2026-08-14 23:29:29,345 [INFO] VisionClient: Shutting down client...
+2026-08-14 23:29:29,346 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 23:29:29,397 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 23:29:29,448 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 23:29:29,489 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 23:30:22,469 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:30:22,470 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:30:22,471 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:30:22,471 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:30:22,630 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:30:23,363 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 5.0s).
+2026-08-14 23:30:23,363 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-14 23:30:28,785 [WARNING] camera: Camera stream failed 15 consecutive reads. Stopping capture thread.
+2026-08-14 23:30:28,788 [INFO] VisionClient: Shutting down client...
+2026-08-14 23:30:28,789 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-14 23:30:28,813 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-14 23:30:28,892 [INFO] camera: WebcamStream camera resources released.
+2026-08-14 23:30:28,903 [INFO] VisionClient: Client shutdown complete.
+2026-08-14 23:36:44,234 [INFO] VisionClient: Initializing Vision Client...
+2026-08-14 23:36:44,235 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-14 23:36:44,236 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-14 23:36:44,237 [INFO] VisionClient: Resolution: 640x480
+2026-08-14 23:36:44,707 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-14 23:36:46,730 [WARNING] camera: Backend MSMF: device opened but delivered no frames. Trying next backend.
+2026-08-14 23:36:48,893 [ERROR] VisionClient: Failed to initialize camera stream: Failed to open webcam at index 0 with any available backend (['MSMF', 'DSHOW']).
+2026-08-15 10:02:28,401 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 10:02:28,402 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 10:02:28,403 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 10:02:28,403 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 10:02:28,788 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 10:02:31,057 [WARNING] camera: No working camera found with MSMF backend. Trying next backend...
+2026-08-15 10:02:31,781 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 10:02:31,781 [ERROR] VisionClient: Failed to initialize camera stream: Failed to open webcam at index 0 with any available backend (['MSMF', 'DSHOW']). Ensure a camera is connected and not in use by another application.
+2026-08-15 10:35:30,746 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 10:35:30,747 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 10:35:30,747 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 10:35:30,748 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 10:35:31,092 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 10:35:33,549 [WARNING] camera: No working camera found with MSMF backend. Trying next backend...
+2026-08-15 10:35:34,244 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 10:35:34,245 [ERROR] VisionClient: Failed to initialize camera stream: Failed to open webcam at index 0 with any available backend (['MSMF', 'DSHOW']). Ensure a camera is connected and not in use by another application.
+2026-08-15 11:18:08,844 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 11:18:08,845 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 11:18:08,845 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 11:18:08,845 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 11:18:09,186 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 11:18:11,523 [WARNING] camera: No working camera found with MSMF backend. Trying next backend...
+2026-08-15 11:18:12,280 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 11:18:12,281 [ERROR] VisionClient: Failed to initialize camera stream: Failed to open webcam at index 0 with any available backend (['MSMF', 'DSHOW']). Ensure a camera is connected and not in use by another application.
+2026-08-15 12:33:38,938 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 12:33:38,939 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 12:33:38,940 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 12:33:38,940 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 12:33:40,083 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 12:33:41,781 [WARNING] camera: No working camera found with MSMF backend. Trying next backend...
+2026-08-15 12:33:42,230 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 12:33:42,231 [ERROR] VisionClient: Failed to initialize camera stream: Failed to open webcam at index 0 with any available backend (['MSMF', 'DSHOW']). Ensure a camera is connected and not in use by another application.
+2026-08-15 14:08:19,901 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 14:08:19,902 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 14:08:19,902 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 14:08:19,903 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 14:08:20,136 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 14:08:23,007 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 14:08:23,008 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 14:08:23,008 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 14:08:23,613 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:24,589 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:25,611 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:26,623 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:27,630 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:28,626 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:29,655 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:30,656 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:31,689 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:32,720 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:33,730 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:34,750 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:35,748 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:36,745 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:37,759 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:38,762 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:39,783 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:40,808 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:41,831 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:42,849 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:43,866 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:44,871 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:45,896 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:46,913 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:47,926 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:48,952 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:49,946 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:50,952 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:51,989 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:53,386 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:54,576 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:55,804 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:57,079 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:58,030 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:08:59,217 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:00,258 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:01,389 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:02,590 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:03,829 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:04,872 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:05,940 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:06,824 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:07,788 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:08,823 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:09,868 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:10,897 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:11,917 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:12,910 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:13,909 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:14,965 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:15,976 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:17,015 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:18,014 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:19,014 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:20,079 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:21,077 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:22,113 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:23,114 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:24,115 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:25,144 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:26,147 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:27,162 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:28,193 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:29,201 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:30,241 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:31,240 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:32,270 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:33,596 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:34,605 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:35,889 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:36,890 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:37,901 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:38,685 [INFO] VisionClient: User requested exit.
+2026-08-15 14:09:38,686 [INFO] VisionClient: Shutting down client...
+2026-08-15 14:09:38,686 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 14:09:38,707 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:38,780 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 14:09:38,969 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 14:09:45,093 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 14:09:45,094 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 14:09:45,095 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 14:09:45,096 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 14:09:45,230 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 14:09:48,402 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 14:09:48,405 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 14:09:48,406 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 14:09:49,002 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:49,981 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:50,606 [INFO] VisionClient: User requested exit.
+2026-08-15 14:09:50,607 [INFO] VisionClient: Shutting down client...
+2026-08-15 14:09:50,607 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 14:09:50,628 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:09:50,668 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 14:09:50,846 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 14:14:44,343 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 14:14:44,344 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 14:14:44,344 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 14:14:44,345 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 14:14:44,708 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 14:14:45,448 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 14:14:48,661 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 14:14:48,663 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 14:14:48,663 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 14:14:49,259 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:14:50,277 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:14:51,307 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:14:52,314 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:14:53,311 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:14:53,377 [INFO] VisionClient: User requested exit.
+2026-08-15 14:14:53,377 [INFO] VisionClient: Shutting down client...
+2026-08-15 14:14:53,378 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 14:14:53,407 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:14:53,477 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 14:14:53,667 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 14:15:01,460 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 14:15:01,460 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 14:15:01,461 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 14:15:01,461 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 14:15:01,576 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 14:15:01,914 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 14:15:04,942 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 14:15:04,949 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 14:15:04,952 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 14:15:05,503 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:06,539 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:07,552 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:08,587 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:09,586 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:10,597 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:11,625 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:12,618 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:13,636 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:14,668 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:15,689 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:16,706 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:17,722 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:18,748 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:19,790 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:20,826 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:21,661 [INFO] VisionClient: User requested exit.
+2026-08-15 14:15:21,662 [INFO] VisionClient: Shutting down client...
+2026-08-15 14:15:21,662 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 14:15:21,677 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 14:15:21,753 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 14:15:21,866 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 15:16:25,653 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 15:16:25,655 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 15:16:25,658 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 15:16:25,660 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 15:16:26,217 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 15:16:27,488 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 15:16:32,031 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 15:16:32,033 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 15:16:32,034 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 15:16:32,799 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:33,683 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:34,687 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:35,737 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:36,765 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:37,751 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:38,765 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:39,782 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:40,814 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:41,838 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:42,864 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:43,847 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:44,861 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:45,897 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:46,915 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:47,901 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:48,962 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:49,963 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:50,949 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:51,967 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:52,993 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:54,015 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:54,371 [INFO] VisionClient: Keyboard interrupt received.
+2026-08-15 15:16:54,372 [INFO] VisionClient: Shutting down client...
+2026-08-15 15:16:54,372 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 15:16:54,383 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:16:54,468 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 15:16:54,503 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 15:17:54,695 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 15:17:54,697 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 15:17:54,697 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 15:17:54,698 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 15:17:55,154 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 15:17:55,841 [WARNING] camera: No working camera found with DSHOW backend. Trying next backend...
+2026-08-15 15:17:59,197 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 15:17:59,199 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 15:17:59,199 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 15:18:00,130 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:01,146 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:02,155 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:03,205 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:04,194 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:05,227 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:06,240 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:07,270 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:08,275 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:09,305 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:09,778 [INFO] VisionClient: User requested exit.
+2026-08-15 15:18:09,778 [INFO] VisionClient: Shutting down client...
+2026-08-15 15:18:09,779 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 15:18:09,807 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:18:09,878 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 15:18:10,053 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 15:25:00,327 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 15:25:00,328 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 15:25:00,328 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 15:25:00,329 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 15:25:00,725 [INFO] gesture.hand_tracker: Initialized HandLandmarker from C:\devlop\gesture control vehicle\client\gesture\hand_landmarker.task
+2026-08-15 15:25:50,638 [INFO] camera: Camera opened at index 1 (MSMF).
+2026-08-15 15:25:50,640 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 15:25:50,641 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 15:25:51,374 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:52,322 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:53,324 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:54,358 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:55,407 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:56,425 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:57,421 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:58,411 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:25:59,427 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:00,483 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:01,485 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:02,496 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:03,544 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:04,545 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:05,560 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:06,560 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:07,629 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:08,608 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:09,627 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:10,609 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:11,661 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:12,623 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:13,655 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:14,673 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:15,672 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:16,696 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:17,712 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:18,737 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:19,564 [INFO] VisionClient: User requested exit.
+2026-08-15 15:26:19,565 [INFO] VisionClient: Shutting down client...
+2026-08-15 15:26:19,566 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 15:26:19,574 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
+2026-08-15 15:26:19,648 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 15:26:19,736 [INFO] VisionClient: Client shutdown complete.

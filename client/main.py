@@ -1,8 +1,8 @@
 """
 Vision Client Entrypoint — Gesture-Controlled Vehicle.
-TRD §3.2 & §5.5: Captures webcam video, runs MediaPipe tracking, classifies gestures,
-applies majority-vote smoothing, transmits HTTP commands to Pi, renders overlay,
-and handles local logging and fail-safe stop.
+TRD §3.2 & §5.5: Captures webcam video via threaded WebcamStream, runs MediaPipe tracking,
+classifies gestures, applies majority-vote smoothing, transmits HTTP commands to Pi,
+renders overlay, and handles local logging and fail-safe stop.
 """
 
 import sys
@@ -11,6 +11,7 @@ import logging
 import cv2
 
 from config import parse_args, TARGET_LATENCY_MS
+from camera import WebcamStream
 from gesture import HandTracker, GestureClassifier, GestureSmoother
 from network import CommandClient
 from ui import OverlayDrawer
@@ -42,7 +43,7 @@ def main():
     logger.info("Target Latency Budget: %d ms", TARGET_LATENCY_MS)
     logger.info("Resolution: %dx%d", config.frame_width, config.frame_height)
 
-    # Initialize components
+    # Initialize vision & network components
     tracker = HandTracker(
         max_num_hands=1,
         min_detection_confidence=0.5,
@@ -57,56 +58,23 @@ def main():
     )
     overlay = OverlayDrawer()
 
-    cap = cv2.VideoCapture(config.camera_index)
-    if not cap.isOpened():
-        logger.error("Failed to open webcam at index %d", config.camera_index)
+    # Initialize threaded camera stream to eliminate buffer latency
+    try:
+        stream = WebcamStream(
+            camera_index=config.camera_index,
+            width=config.frame_width,
+            height=config.frame_height
+        ).start()
+    except Exception as e:
+        logger.error("Failed to initialize camera stream: %s", e)
         sys.exit(1)
 
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, config.frame_width)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, config.frame_height)
-
-    logger.info("Camera capture loop started. Press 'q' or Esc to exit.")
+    logger.info("Threaded camera stream active. Press 'q' or Esc to exit.")
 
     prev_frame_time = time.time()
     fps = 0.0
 
     try:
-        # Reduce internal capture buffering to minimize latency buildup
-        try:
-            cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
-        except Exception:
-            # Not all backends support CAP_PROP_BUFFERSIZE; ignore failures
-            pass
-
-        # Create a background frame grabber to avoid processing stale buffered frames
-        class FrameGrabber(threading.Thread):
-            def __init__(self, capture: cv2.VideoCapture):
-                super().__init__(daemon=True)
-                self.capture = capture
-                self.lock = threading.Lock()
-                self.latest_frame = None
-                self.running = True
-
-            def run(self):
-                while self.running:
-                    ret, frame = self.capture.read()
-                    if not ret:
-                        # small sleep to avoid tight looping on error
-                        time.sleep(0.01)
-                        continue
-                    with self.lock:
-                        self.latest_frame = frame
-
-            def read(self):
-                with self.lock:
-                    return self.latest_frame
-
-            def stop(self):
-                self.running = False
-
-        grabber = FrameGrabber(cap)
-        grabber.start()
-
         PROCESS_EVERY_N = 2  # Only run expensive detector every Nth frame
         frame_counter = 0
 
@@ -119,7 +87,6 @@ def main():
 
         # Background network sender to decouple blocking HTTP calls
         send_queue: Queue = Queue()
-        network_lock = threading.Lock()
         last_network_ms = 0.0
 
         def network_worker():
@@ -140,14 +107,13 @@ def main():
         net_thread = threading.Thread(target=network_worker, daemon=True)
         net_thread.start()
 
-        while True:
-            # Measure capture time by reading latest frame from grabber
+        while not stream.stopped:
+            # Read latest frame from threaded WebcamStream
             t0 = time.perf_counter()
-            frame = grabber.read()
+            ret, frame = stream.read()
             capture_ms = (time.perf_counter() - t0) * 1000.0
 
-            if frame is None:
-                # No frame available yet from grabber
+            if not ret or frame is None:
                 time.sleep(0.005)
                 continue
 
@@ -268,18 +234,12 @@ def main():
         logger.exception("Unexpected error in main processing loop: %s", e)
     finally:
         logger.info("Shutting down client...")
-        # Fail-safe stop command
+        # Fail-safe stop command & resource cleanup
         try:
             network_client.send_stop()
         except Exception:
             pass
-        # Stop background grabber
-        try:
-            grabber.stop()
-            grabber.join(timeout=1.0)
-        except Exception:
-            pass
-        cap.release()
+        stream.stop()
         cv2.destroyAllWindows()
         logger.info("Client shutdown complete.")
 
