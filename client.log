@@ -821,3 +821,311 @@
 2026-08-15 15:26:19,574 [INFO] network.command_client: Sent gesture 'stop' successfully (applied: 'stop')
 2026-08-15 15:26:19,648 [INFO] camera: WebcamStream camera resources released.
 2026-08-15 15:26:19,736 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:08:47,734 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:08:47,734 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:08:47,734 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:08:47,735 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:08:47,942 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:14:19,829 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:14:19,830 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:14:19,830 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:14:19,830 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:14:19,914 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:14:21,900 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:14:21,900 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:14:21,900 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:14:25,577 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc94b79d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:14:28,705 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc9496f90>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:14:31,828 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc94eb790>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:14:34,955 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc9564490>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:14:38,084 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc9565150>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:14:41,206 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc9565e10>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:14:42,331 [INFO] VisionClient: User requested exit.
+2026-08-15 21:14:42,331 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:14:42,331 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:14:44,340 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc9566be0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:14:45,469 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1ffc9567790>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:14:45,961 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:14:45,973 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:33:28,654 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:33:28,654 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:33:28,654 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:33:28,655 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:33:28,706 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:33:41,940 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:33:41,940 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:33:41,940 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:33:41,940 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:33:41,987 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:33:43,674 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:33:43,674 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:33:43,674 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:33:47,314 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fcd579d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:33:50,453 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fcd42c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:33:53,587 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fcd878a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:33:56,709 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fce085a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:33:59,844 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fce09260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:02,975 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fce09f20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:06,099 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fce0abe0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:09,237 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201fce0b8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:12,373 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2019153c5a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:15,511 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2019153d260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:18,645 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2019153df20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:21,781 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2019153ebe0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:23,637 [INFO] VisionClient: User requested exit.
+2026-08-15 21:34:23,637 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:34:23,637 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:34:24,897 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2019153f9b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:26,755 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x201915a86b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:34:27,240 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:34:27,245 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:34:45,890 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:34:45,890 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:34:45,890 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:34:45,891 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:34:45,933 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:34:47,630 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:34:47,630 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:34:47,630 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:34:51,271 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x238374679d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:34:54,410 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23837452c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:34:57,544 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x238374978a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:00,695 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x238375185a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:03,832 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23837519260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:06,967 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23837519f20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:10,103 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2383751abe0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:13,223 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2383751b8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:16,344 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bcdc5a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:19,480 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bcdd260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:22,616 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bcddf20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:25,749 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bcdebe0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:28,872 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bcdf8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:32,009 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bd4c5a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:35,146 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bd4d260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:36,392 [INFO] VisionClient: User requested exit.
+2026-08-15 21:35:36,392 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:35:36,393 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:35:38,276 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bd4e030>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:39,509 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2384bd4ecf0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:35:39,990 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:35:40,004 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:38:53,937 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:38:53,937 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:38:53,937 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:38:53,937 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:38:53,985 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:38:55,758 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:38:55,758 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:38:55,759 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:38:59,399 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b93ff79d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:39:02,515 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b93fe2c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:39:05,637 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b940278a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:08,780 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b940ac5a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:11,928 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b940ad260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:13,463 [INFO] VisionClient: Keyboard interrupt received.
+2026-08-15 21:39:13,463 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:39:13,463 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:39:15,062 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b940ae030>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:16,583 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x23b940aecf0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:17,066 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:39:17,067 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:39:38,467 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:39:38,468 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:39:38,468 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:39:38,468 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:39:38,510 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:39:40,218 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:39:40,218 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:39:40,219 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:39:43,860 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809cdc79d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:39:46,996 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809cdb2c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:39:50,129 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809cdf78a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:53,267 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809ce785a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:56,402 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809ce79260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:39:59,522 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809ce79f20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:02,657 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809ce7abe0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:05,778 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2809ce7b8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:08,895 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x280b16185a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:10,033 [INFO] VisionClient: User requested exit.
+2026-08-15 21:40:10,033 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:40:10,034 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:40:12,021 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x280b1619370>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:13,170 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x280b1619f20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:13,669 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:40:13,682 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:40:39,677 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:40:39,677 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:40:39,677 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:40:39,677 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:40:39,719 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:40:41,409 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:40:41,410 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:40:41,410 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:40:45,050 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4b879d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:40:48,173 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4b72c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:40:51,312 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4bb78a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:54,442 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4c385a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:57,578 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4c39260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:40:59,785 [INFO] VisionClient: User requested exit.
+2026-08-15 21:40:59,785 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:40:59,786 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:41:00,712 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4c39f20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:41:02,907 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1cdf4c3b130>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:41:03,381 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:41:03,393 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:41:26,679 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:41:26,680 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:41:26,680 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:41:26,680 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:41:26,722 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:41:28,414 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:41:28,415 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:41:28,415 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:41:32,054 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2130e3e79d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:41:33,588 [INFO] VisionClient: User requested exit.
+2026-08-15 21:41:33,589 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:41:33,589 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:41:35,177 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2130e416ad0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:41:36,712 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2130e4179b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:41:37,188 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:41:37,201 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:45:45,043 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:45:45,043 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:45:45,043 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:45:45,043 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:45:45,087 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:45:46,860 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:45:46,861 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:45:46,861 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:45:47,378 [ERROR] VisionClient: Unexpected error in main processing loop: cannot access local variable 'display_frame' where it is not associated with a value
+Traceback (most recent call last):
+  File "c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\main.py", line 219, in main
+    frame=display_frame,
+          ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'display_frame' where it is not associated with a value
+2026-08-15 21:45:47,379 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:45:47,380 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:45:50,499 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1937398e650>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:45:50,499 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x19373962d50>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:45:50,988 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:45:50,991 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:45:54,727 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:45:54,728 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:45:54,728 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:45:54,728 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:45:54,771 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:45:56,467 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:45:56,467 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:45:56,468 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:45:56,986 [ERROR] VisionClient: Unexpected error in main processing loop: cannot access local variable 'display_frame' where it is not associated with a value
+Traceback (most recent call last):
+  File "c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\main.py", line 219, in main
+    frame=display_frame,
+          ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'display_frame' where it is not associated with a value
+2026-08-15 21:45:56,987 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:45:56,988 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:46:00,111 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x147c8662e70>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:46:00,111 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x147c868e650>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:46:00,596 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:46:00,598 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:47:28,989 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:47:28,989 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:47:28,990 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:47:28,990 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:47:29,040 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:47:30,812 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:47:30,812 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:47:30,813 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:47:31,332 [ERROR] VisionClient: Unexpected error in main processing loop: cannot access local variable 'display_frame' where it is not associated with a value
+Traceback (most recent call last):
+  File "c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\main.py", line 219, in main
+    frame=display_frame,
+          ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'display_frame' where it is not associated with a value
+2026-08-15 21:47:31,333 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:47:31,333 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:47:34,452 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1c4809b2e70>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:47:34,452 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1c4809de780>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:47:34,939 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:47:34,943 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:48:36,104 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:48:36,104 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:48:36,104 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:48:36,104 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:48:36,153 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:48:37,918 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:48:37,919 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:48:37,919 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:48:38,440 [ERROR] VisionClient: Unexpected error in main processing loop: cannot access local variable 'display_frame' where it is not associated with a value
+Traceback (most recent call last):
+  File "c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\main.py", line 219, in main
+    frame=display_frame,
+          ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'display_frame' where it is not associated with a value
+2026-08-15 21:48:38,442 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:48:38,442 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:48:41,570 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1e337342e70>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:48:41,570 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x1e33736e650>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:48:42,046 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:48:42,049 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:49:27,620 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:49:27,620 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:49:27,620 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:49:27,621 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:49:27,665 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:49:29,433 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:49:29,433 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:49:29,433 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:49:29,954 [ERROR] VisionClient: Unexpected error in main processing loop: name 'frame_with_overlay' is not defined
+Traceback (most recent call last):
+  File "c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\main.py", line 230, in main
+    frame_with_overlay
+NameError: name 'frame_with_overlay' is not defined
+2026-08-15 21:49:29,957 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:49:29,957 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:49:33,094 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2bb887f2e70>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:49:33,095 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x2bb8881e650>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:49:33,560 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:49:33,563 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:50:14,155 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:50:14,156 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:50:14,156 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:50:14,156 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:50:14,215 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:50:15,992 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:50:15,993 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:50:15,993 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:50:19,647 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x130d63079d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:50:22,255 [INFO] VisionClient: User requested exit.
+2026-08-15 21:50:22,255 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:50:22,255 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:50:22,785 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x130d62f2c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:50:25,374 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x130d6337df0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:50:25,826 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:50:25,838 [INFO] VisionClient: Client shutdown complete.
+2026-08-15 21:51:26,917 [INFO] VisionClient: Initializing Vision Client...
+2026-08-15 21:51:26,918 [INFO] VisionClient: Server Target: http://127.0.0.1:5000/command
+2026-08-15 21:51:26,918 [INFO] VisionClient: Target Latency Budget: 180 ms
+2026-08-15 21:51:26,918 [INFO] VisionClient: Resolution: 640x480
+2026-08-15 21:51:26,960 [INFO] gesture.hand_tracker: Initialized HandLandmarker (VIDEO) from c:\Users\ezeki\OneDrive\Desktop\new\gesture-control-vehicle\client\gesture\hand_landmarker.task
+2026-08-15 21:51:28,725 [INFO] camera: Camera opened at index 0 (MSMF).
+2026-08-15 21:51:28,726 [INFO] camera: WebcamStream capture thread started (Index: 0, 640x480, warmup: 0.5s).
+2026-08-15 21:51:28,726 [INFO] VisionClient: Threaded camera stream active. Press 'q' or Esc to exit.
+2026-08-15 21:51:32,367 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f6d79d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:51:35,506 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f6c2c30>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Retrying)
+2026-08-15 21:51:38,638 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f7078a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:51:41,775 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f7885a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:51:44,911 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f789260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:51:48,047 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f789f20>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:51:51,190 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f78abe0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:51:54,316 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b4f78b8a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:51:57,454 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b63ec45a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:52:00,416 [INFO] VisionClient: User requested exit.
+2026-08-15 21:52:00,417 [INFO] VisionClient: Shutting down client...
+2026-08-15 21:52:00,417 [INFO] network.command_client: Executing fail-safe stop command...
+2026-08-15 21:52:00,591 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b63ec5260>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:52:03,526 [WARNING] network.command_client: Failed to send gesture 'stop': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b63ec67a0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:52:03,725 [WARNING] network.command_client: Failed to send gesture 'right': HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /command (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=5000) at 0x16b63ec68b0>, 'Connection to 127.0.0.1 timed out. (connect timeout=0.8)')) (status: Offline)
+2026-08-15 21:52:04,031 [INFO] camera: WebcamStream camera resources released.
+2026-08-15 21:52:04,044 [INFO] VisionClient: Client shutdown complete.

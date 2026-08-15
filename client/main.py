@@ -117,10 +117,19 @@ def main():
                 time.sleep(0.005)
                 continue
 
-            # Enforce configured resolution (some cameras ignore CAP_PROP settings)
+            # Enforce configured resolution
             t1 = time.perf_counter()
+
             if frame.shape[1] != config.frame_width or frame.shape[0] != config.frame_height:
-                frame = cv2.resize(frame, (config.frame_width, config.frame_height), interpolation=cv2.INTER_LINEAR)
+                frame = cv2.resize(
+                    frame,
+                    (config.frame_width, config.frame_height),
+                    interpolation=cv2.INTER_LINEAR
+                )
+
+            # Mirror the frame BEFORE any vision processing
+            frame = cv2.flip(frame, 1)
+
             preprocess_ms = (time.perf_counter() - t1) * 1000.0
 
             current_time = time.time()
@@ -202,6 +211,8 @@ def main():
             # Ensure status_msg is set for all execution paths
             status_msg = last_status_msg
 
+            # 7. Display the already-mirrored frame
+            t6 = time.perf_counter()
             frame_with_overlay = overlay.draw(
                 frame=frame,
                 landmarks=landmarks,
@@ -212,14 +223,15 @@ def main():
                 timings=timings
             )
 
-            # 7. Mirror display for intuitive webcam preview but keep processing on original orientation
-            t6 = time.perf_counter()
-            display_frame = cv2.flip(frame_with_overlay, 1)
-            cv2.imshow("Gesture-Controlled Vehicle Client", display_frame)
+            cv2.imshow(
+                "Gesture-Controlled Vehicle Client",
+                frame_with_overlay
+            )
+
             display_ms = (time.perf_counter() - t6) * 1000.0
 
-            # Update timing shown for draw/display
-            timings["Display"] = display_ms
+
+  
 
             key = cv2.waitKey(1) & 0xFF
             if key in (27, ord('q')):

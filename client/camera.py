@@ -24,13 +24,8 @@ _FIRST_FRAME_TIMEOUT = 10.0
 # Maximum camera index to scan when auto-detecting.
 _MAX_SCAN_INDEX = 2
 
-# URL-based sources probed before index scanning.
-# DroidCam (USB or WiFi) serves an HTTP MJPEG stream that OpenCV opens directly,
-# bypassing the virtual camera driver and its MSMF pixel-format green-frame bug.
-_URL_SOURCES: list[tuple[str, str]] = [
-    ("DroidCam-USB",  "http://localhost:4747/mjpegfeed"),
-    ("DroidCam-USB2", "http://localhost:4747/video"),
-]
+# No URL-based sources; only use physical webcam.
+_URL_SOURCES: list[tuple[str, str]] = []
 
 # Backends for physical/index-based camera scanning.
 # MSMF is the Windows default; DSHOW is kept as a fallback.
@@ -81,11 +76,7 @@ def _open_camera(camera_index: int, width: int, height: int) -> cv2.VideoCapture
         return None
 
     # --- Step 1: try URL-based sources (virtual cameras, DroidCam, IP webcams) ---
-    for source_name, url in _URL_SOURCES:
-        cap = _try_url(source_name, url)
-        if cap is not None:
-            return cap
-        logger.debug("URL source unavailable (%s): %s", source_name, url)
+    # Skipped: No URL sources, only physical webcam will be used.
 
     # --- Step 2: fall back to physical device index scanning ---
     indices_to_try = [camera_index] + [
